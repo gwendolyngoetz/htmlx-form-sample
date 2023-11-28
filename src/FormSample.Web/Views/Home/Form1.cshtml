@@ -1,0 +1,23 @@
+@model FormSample.Web.Controllers.Data
+@{
+Layout = null;
+}
+
+<form hx-post="/Home/Form1" hx-target="this" hx-swap="outerHTML">
+    <h2>Form 1</h2>
+    <div>
+        <label for="firstname">First Name</label>
+        <input name="firstname" type="text" value="@Model.FirstName" />
+    </div>
+    <div>
+        <label for="lastname">Last Name</label>
+        <input name="lastname" type="text" value="@Model.LastName" />
+    </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input name="phone" type="text" value="@Model.Phone" />
+    </div>
+    <div>
+        <input type="submit" value="Next"></input>
+    </div>
+</form>

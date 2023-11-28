@@ -1,20 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
 </head>
+
 <body>
     <header>
         <nav>
-            <a asp-area="" asp-controller="Home" asp-action="Index">FormSample</a>
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <h1>Home</h1>
+            </a>
         </nav>
     </header>
     <main>
         @RenderBody()
     </main>
+    <script src="https://unpkg.com/htmx.org@1.9.9"></script>
     <script src="~/js/main.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

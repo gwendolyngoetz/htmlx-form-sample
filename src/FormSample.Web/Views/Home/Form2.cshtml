@@ -1,0 +1,27 @@
+@model FormSample.Web.Controllers.Data
+@{
+Layout = null;
+}
+
+<form hx-post="/Home/Form2" hx-target="this" hx-swap="outerHTML">
+    <h2>Form 2</h2>
+    <div>
+        <label for="address">Address</label>
+        <input name="address" type="text" value="@Model.Address" />
+    </div>
+    <div>
+        <label for="city">City</label>
+        <input name="city" type="text" value="@Model.City" />
+    </div>
+    <div>
+        <label for="state">State</label>
+        <input name="state" type="text" value="@Model.State" />
+    </div>
+    <div>
+        <label for="zip">Zip</label>
+        <input name="zip" type="text" value="@Model.Zip" />
+    </div>
+    <div>
+        <input type="submit" value="Submit"></input>
+    </div>
+</form>

@@ -1,3 +1,96 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 16px;
+}
+
+body {
+  margin: 2rem;
+  color: #b4b2ba;
+  background-color: #090712;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td:nth-child(1) {
+  font-weight: bold;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+td:nth-child(2) {
+  padding-bottom: 0.5rem;
+}
+
+main {
+  max-width: 64rem;
+}
+
+main > div,
+p {
+  margin-bottom: 1rem;
+}
+
+main > div:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: #998288;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c5b8bb;
+  text-decoration: underline;
+}
+
+form {
+  margin-bottom: 1rem;
+}
+
+form > div {
+  margin-bottom: 1rem;
+}
+
+form > div:last-child {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+}
+
+input,
+select,
+textarea {
+  font-size: 1.2rem;
+  padding: 0.4rem;
 }

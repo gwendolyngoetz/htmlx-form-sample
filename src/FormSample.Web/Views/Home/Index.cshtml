@@ -1,4 +1,24 @@
-﻿<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae tellus nulla. Sed ac ornare nisl. Praesent id
+    tortor nec mi sodales malesuada vel quis tellus. Mauris odio odio, pharetra ut augue id, laoreet vehicula erat. Cras
+    gravida scelerisque tortor vitae hendrerit. Curabitur vitae ante mauris. Integer molestie rutrum dolor, porttitor
+    convallis ante vestibulum et. In ornare lorem non odio commodo, ac dapibus magna mollis. Fusce congue dapibus lacus
+    nec dictum. Praesent ut augue magna. Pellentesque eu odio tristique, tincidunt sem a, imperdiet est. Praesent
+    suscipit tincidunt gravida. Mauris malesuada erat vulputate dictum finibus. </p>
+
+<div id="homeContainer">
+    <input type="submit" value="Start" hx-get="/Home/Form1" hx-target="#homeContainer" hx-swap="outerHTML" />
+    @if(ViewBag.IsComplete) {
+    <input type="submit" value="Summary" hx-get="/Home/Summary" hx-target="#homeContainer" hx-swap="outerHTML" />
+    }
 </div>
+
+<p>Nullam felis metus, lacinia non dolor id, rutrum tempus sem. Morbi commodo sem in orci pharetra eleifend. Class
+    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam pellentesque tortor
+    quis condimentum lacinia. Cras et tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Curabitur interdum tempus orci ac pellentesque. Nullam auctor mattis dolor sed consequat. Aenean orci purus,
+    porttitor non ante vitae, facilisis varius eros.</p>
+
+<p>Suspendisse et dapibus tortor, nec rutrum ante. Curabitur mattis lectus sed nisi rhoncus pretium. Donec blandit elit
+    ipsum, non convallis purus dapibus et. Praesent auctor sagittis massa, sit amet sodales nibh aliquam eget. Donec sit
+    amet fringilla lacus, ut laoreet sem. Vestibulum eu elit diam. Fusce maximus, ante in varius aliquet, lorem nunc
+    auctor nisl, in blandit dui sapien ac arcu. Mauris tristique scelerisque ante, sed faucibus elit iaculis non.</p>
