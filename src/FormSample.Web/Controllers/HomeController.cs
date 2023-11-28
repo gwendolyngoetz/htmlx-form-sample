@@ -13,13 +13,14 @@ namespace FormSample.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Form1() {
-
+        public IActionResult Form1() 
+        {
             return View(_data);
         }
 
         [HttpPost]
-        public IActionResult Form1(IFormCollection formCollection) {
+        public IActionResult Form1(IFormCollection formCollection) 
+        {
             _data.FirstName = formCollection["firstname"];
             _data.LastName = formCollection["lastname"];
             _data.Phone = formCollection["phone"];
@@ -28,13 +29,14 @@ namespace FormSample.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Form2() {
-
+        public IActionResult Form2() 
+        {
             return View(_data);
         }
         
         [HttpPost]
-        public IActionResult Form2(IFormCollection formCollection) {
+        public IActionResult Form2(IFormCollection formCollection)
+        {
             _data.Address = formCollection["address"];
             _data.City = formCollection["city"];
             _data.State = formCollection["state"];
@@ -44,7 +46,8 @@ namespace FormSample.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Summary(IFormCollection formCollection) {
+        public IActionResult Summary(IFormCollection formCollection) 
+        {
             return View(_data);
         }
     }
